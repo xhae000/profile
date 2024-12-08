@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@media (min-aspect-ratio: 1/1) {
+  /* 화면의 가로가 더 큰 경우 (PC) */
+  html {
+    font-size: 1vw; /* 세로 기준 */
+  }
+}
+
+@media (max-aspect-ratio: 1/1) {
+  /* 화면의 세로가 더 큰 경우 (모바일) */
+  html {
+    font-size: 1vh; /* 가로 기준 */
+  }
+}
+
+
+  body{
+    margin : 0;
+  }
+  
+  .title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    color : #000;
+    font-size : 2rem;
+  }
