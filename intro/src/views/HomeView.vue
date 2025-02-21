@@ -76,8 +76,8 @@
                 :class="showAdditionalText ? 'opacity-100' : 'opacity-0'"
             >
                 <span class="font-bold">변화와 성장을 열망하는 개발자</span>, 김우진입니다! <br />
-                경희대학교에서 CS와 SW를 공부하고 있습니다. <br />
-                다양한 경험을 통해 더 넓은 세상을 관찰하고 배우고 싶습니다.
+                SW를 전공하고 있으며 사회문제를 해결하는 데에 관심이 많습니다. <br>
+                항상 다양한 경험을 통해 통찰력과 깨달음을 얻고자 노력합니다.
             </div>
             </div>
             <div class="text-center mt-8" style="cursor:pointer" @click="scrollToSection(2)">
@@ -96,11 +96,12 @@
 
               <div class="mt-7 w-[60dvw] text-[1.1rem] font-[350] text-gray-900 tracking-[0.04rem]">
 
-                웹 서비스의 백엔드와 프론트엔드 개발 경험이 있으며 졸업 후 풀스택 개발자로 활동하고 싶습니다.
+                백엔드와 프론트엔드 개발 경험이 있으며 졸업 후 풀스택 개발자로 활동하고 싶습니다.
                 Spring Boot, Vue, MySQL, AWS, Git, Figma 등을 활용하여 서비스의 기획부터 설계, 개발까지 주도적으로 진행해 본 경험이 있습니다.
                 프로덕션의 독창성, 확장성, 유지보수성을 가장 중요하게 생각하며 사용자에게 더 나은 경험을 제공하기 위해 항상 고민합니다. <br>
                 <br>
-                개발에서 가장 중요한 가치는 팀워크라고 믿습니다.
+                저는 소프트웨어로 우리 사회 속 문제를 해결하는 데에 관심이 많습니다.
+                그리고 이를 위한 가장 중요한 가치는 팀워크라고 믿습니다.
                 아무리 뛰어난 기술력을 가진 팀이라도 원활한 커뮤니케이션과 목표를 향한 능동적인 협업이 뒷받침되지 않는다면, 좋은 결과물을 만들어내긴 어렵습니다.
                 아직 개발 능력조차 부족한 학생 개발자이지만, 학부기간 동안은 개발이 아닌 다양한 경험을 통해 넓은 시야를 지니고자 노력하고 있습니다.
                 이를 바탕으로 조직 내에서 좋은 커뮤니케이터이자 문제를 뚝딱뚝딱 해결할 수 있는 개발자로 성장하고 싶습니다!
@@ -308,6 +309,45 @@
               <div class="title">
                 PROJECT        
               </div>
+              <!-- KHU BUS -->
+              <div class="mt-4">
+                <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
+                  <div class="h-full flex items-center">
+                      <img class="h-full rounded-2xl" src="../assets/mockup/khubus.png" />
+                  </div>
+                  <div class="px-7 flex flex-col justify-between">
+                      <div>
+                          <div class="flex items-center ">
+                              <div class="text-[2rem] text-gray-800 font-bold">
+                                  KHU BUS
+                              </div>
+                              <div class="text-gray-500 font-light ml-6">
+                                  24.2 - 개발 진행 중
+                              </div>
+                          </div>
+                          <div class="mt-2 text-gray-700 text-[0.9rem]">
+                              경희대학교 학생들을 위한 캠퍼스 버스 정보제공 앱
+                          </div>
+                      </div>
+
+                      <div class="">
+                          <div class="text-[1.15rem] text-blue-600 font-[300]">
+                              &bull; 3월 배포 예정
+                          </div>
+                          <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                              &bull; 기획, 백엔드, 프론트엔드, 디자인 담당
+                          </div>
+                      </div>
+
+                      <div>
+                          <SkillTag name="Spring Boot" boxColor="#5713ff" textColor="#fff"/>
+                          <SkillTag name="Kotlin" boxColor="#5713ff" textColor="#fff"/>
+                          <SkillTag name="Vue JS" boxColor="#5713ff" textColor="#fff"/>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
               <!--Made For You-->
               <div class="mt-4">
                 <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
@@ -327,12 +367,24 @@
                           <div class="mt-2 text-gray-700 text-[0.9rem]">
                               연인들을 위한 주문제작 선물 제작 및 추천 플랫폼
                           </div>
+                          
                       </div>
-
+                      
                       <div class="">
-
-
+                          <div class="text-[1.15rem] text-gray-900 font-[300]">
+                              &bull; Google Matrix/Maps API를 활용하여 두 지점의 대중교통 소요시간 계산 
+                          </div>
+                          <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                              &bull; 각 유저의 목적지까지의 소요 시간을 고려하여 가중치 설정 및 소요시간 차 최소화
+                          </div>
+                          <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                              &bull; Chart.js를 활용하여 소요시간 차 감소 추이 시각화
+                          </div>
+                          <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                              &bull; 기획, 백엔드, 프론트엔드, 디자인 담당
+                          </div>
                       </div>
+
 
                       <div>
                           <SkillTag name="Spring Boot" boxColor="#ff1d98" textColor="#fff"/>
