@@ -309,6 +309,8 @@
         <div class="title">
           PROJECT        
         </div>
+
+        
         <!-- KHU BUS -->
         <div class="mt-4">
           <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
@@ -348,52 +350,6 @@
           </div>
         </div>
 
-        <!--Made For You-->
-        <div class="mt-4">
-          <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
-            <div class="h-full flex items-center">
-                <img class="h-full rounded-2xl" src="../assets/mockup/made-for-you.png" />
-            </div>
-            <div class="px-7 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center ">
-                        <div class="text-[2rem] text-gray-800 font-bold">
-                            Made For You
-                        </div>
-                        <div class="text-gray-500 font-light ml-6">
-                            24.12 - 개발 진행 중
-                        </div>
-                    </div>
-                    <div class="mt-2 text-gray-700 text-[0.9rem]">
-                        연인들을 위한 주문제작 선물 제작 및 추천 플랫폼
-                    </div>
-                    
-                </div>
-                
-                <div class="">
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; Google Matrix/Maps API를 활용하여 두 지점의 대중교통 소요시간 계산 
-                    </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; 각 유저의 목적지까지의 소요 시간을 고려하여 가중치 설정 및 소요시간 차 최소화
-                    </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; Chart.js를 활용하여 소요시간 차 감소 추이 시각화
-                    </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; 기획, 백엔드, 프론트엔드, 디자인 담당
-                    </div>
-                </div>
-
-
-                <div>
-                    <SkillTag name="Spring Boot" boxColor="#ff1d98" textColor="#fff"/>
-                    <SkillTag name="Kotlin" boxColor="#ff1d98" textColor="#fff"/>
-                    <SkillTag name="Vue JS" boxColor="#ff1d98" textColor="#fff"/>
-                </div>
-            </div>
-          </div>
-        </div>
         
         <!--Fair Pair-->
         <div class="mt-4">
