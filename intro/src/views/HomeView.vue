@@ -332,7 +332,7 @@
 
                       <div class="">
                           <div class="text-[1.15rem] text-blue-600 font-[300]">
-                              &bull; 3월 배포 예정
+                              &bull; 3월 배포 예정!
                           </div>
                           <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
                               &bull; 기획, 백엔드, 프론트엔드, 디자인 담당
