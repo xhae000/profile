@@ -566,43 +566,6 @@
           </div>
         </div>
         
-        <!--Company-->
-        <div class="mt-4">
-          <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
-            <div class="h-full flex items-center">
-                <img class="h-full rounded-2xl" src="../assets/mockup/have-to-watch.png" />
-            </div>
-            <div class="px-7 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center ">
-                        <div class="text-[2rem] text-gray-800 font-bold">
-                            HaveToWatch
-                        </div>
-                        <div class="text-gray-500 font-light ml-6">
-                            24.7 - 24.8
-                        </div>
-                    </div>
-                    <div class="mt-2 text-gray-700 text-[0.9rem]">
-                        영화 정보 제공 서비스
-                    </div>
-                </div>
-
-                <div class="">
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; 반응형 웹, SPA
-                    </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; 프론트엔드, 디자인 담당
-                    </div>
-                </div>
-
-                <div>
-                    <SkillTag name="Vue JS" boxColor="#804ceb" textColor="#fff"/>
-                    <SkillTag name="Stackblitz" boxColor="#804ceb" textColor="#fff"/>
-                </div>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
