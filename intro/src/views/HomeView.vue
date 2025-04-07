@@ -332,7 +332,7 @@
 
                 <div class="">
                     <div class="text-[1.15rem] text-blue-600 font-[300]">
-                        &bull; 3월 배포 예정!
+                        &bull; 버스 시점 정보 제공 알고리즘 개발 중
                     </div>
                     <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
                         &bull; 기획, 백엔드, 프론트엔드, 디자인 담당
@@ -348,31 +348,43 @@
           </div>
         </div>
 
-        <!--Made For You-->
+        <!--LOOPIN-->
         <div class="mt-4">
           <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
             <div class="h-full flex items-center">
-                <img class="h-full rounded-2xl" src="../assets/mockup/made-for-you.png" />
+                <img class="h-full rounded-2xl" src="../assets/mockup/loop-in.png" />
             </div>
             <div class="px-7 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center ">
                         <div class="text-[2rem] text-gray-800 font-bold">
-                            Made For You
+                            Loopin
                         </div>
                         <div class="text-gray-500 font-light ml-6">
-                            24.12 - 개발 진행 중
+                            24.3 - 24.4
                         </div>
                     </div>
                     <div class="mt-2 text-gray-700 text-[0.9rem]">
-                        연인들을 위한 주문제작 선물 제작 및 추천 플랫폼
+                        AI 기반의 대학생 실명기반 모임 플랫폼
                     </div>
                     
                 </div>
                 
                 <div class="">
                     <div class="text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; 개발 기간 미정
+                        &bull; 프롬프트 튜닝을 활용한 AI 자유 입력 기반 맞춤형 추천 제공
+                    </div>
+                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                        &bull; OCR 기술을 활용한 학생증 이미지 텍스트 자동 인식 및 처리
+                    </div>
+                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                        &bull; 오토 스케일링 및 로드 밸런싱을 통한 트래픽 대응 및 서버 안정성 향상
+                    </div>
+                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                        &bull; JWT 기반 인증으로 사용자 식별 및 보안 강화
+                    </div>
+                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                        &bull; 백엔드, 프론트엔드 개발 담당
                     </div>
                 </div>
 
@@ -381,6 +393,10 @@
                     <SkillTag name="Spring Boot" boxColor="#ff1d98" textColor="#fff"/>
                     <SkillTag name="Kotlin" boxColor="#ff1d98" textColor="#fff"/>
                     <SkillTag name="Vue JS" boxColor="#ff1d98" textColor="#fff"/>
+                    <SkillTag name="Python" boxColor="#ff1d98" textColor="#fff"/>
+                    <SkillTag name="FastAPI" boxColor="#ff1d98" textColor="#fff"/>
+                    <SkillTag name="AWS" boxColor="#ff1d98" textColor="#fff"/>
+
                 </div>
             </div>
           </div>
@@ -409,13 +425,13 @@
 
                 <div class="">
                     <div class="text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; Google Matrix/Maps API를 활용하여 두 지점의 대중교통 소요시간 계산 
+                        &bull; Google Maps/Matrix API를 활용한 대중교통 기반 소요 시간 계산
                     </div>
                     <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; 각 유저의 목적지까지의 소요 시간을 고려하여 가중치 설정 및 소요시간 차 최소화
+                        &bull; 유저별 목적지 기준 가중치 설정 및 소요 시간 차 최소화 알고리즘 적용
                     </div>
                     <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; Chart.js를 활용하여 소요시간 차 감소 추이 시각화
+                        &bull; Chart.js 기반 소요 시간 차이 감소 시각화
                     </div>
                     <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
                         &bull; 기획, 백엔드, 프론트엔드, 디자인 담당
@@ -455,13 +471,13 @@
 
                 <div class="">
                     <div class="text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; 한국관광공사 OPEN API로 얻어낸 캠핑장 정보 적재 및 재가공
+                        &bull; 한국관광공사 Open API 기반 캠핑장 정보 수집, 가공 및 DB 적재
                     </div>
                     <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; JWT를 활용한 state-less application 구현
+                        &bull; JWT 기반 인증 구조를 활용한 무상태(state-less) 애플리케이션 구현
                     </div>
                     <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; single page application 구현으로 모바일 환경 최적화
+                        &bull; SPA(Single Page Application) 방식으로 모바일 UX 최적화
                     </div>
                     <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
                         &bull; 기획, 백엔드, 프론트엔드, 디자인, 배포 담당
@@ -547,13 +563,13 @@
 
                 <div class="">
                     <div class="text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; Vanilla JS로 도트 이미지 애니메이션 구현
+                        &bull; Vanilla JS 기반 도트 이미지 애니메이션 로직 구현
                     </div> 
                     <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; 페이지 내 section 구분에 대한 스크롤 애니메이션
+                        &bull; 섹션 단위 스크롤 트리거 애니메이션으로 페이지 전환 효과 강화
                     </div>
                     <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
-                        &bull; 프론트엔드 개발, 배포 담당
+                        &bull; 프론트엔드 개발 담당
                     </div>
                 </div>
 
