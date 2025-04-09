@@ -586,9 +586,27 @@
 
     </div>
 
+    
     <!-- section4 -->
     <div id="section4" class="w-screen min-h-screen bg-[#fff] pl-[20dvw]">
-      <div class="w-full pt-[44dvh] text-center font-[100] text-[2rem]"><div>준비 중입니다.</div></div>
+
+      <div class="title pl-[5rem] pt-[5rem] text-[#000]">
+              Blog
+      </div>
+
+      <div class="flex gap-[2%] p-[5rem] pt-[2rem] flex-wrap">
+        <Article 
+          @click="goPage(`
+          https://velog.io/@xha314/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%8B%9D%EB%B3%84-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EA%B8%B0-%EC%9D%B8%EC%A6%9D-%EC%97%86%EC%9D%B4-%EC%8B%9D%EB%B3%84%EB%A7%8C-%ED%95%98%EA%B8%B0
+          `)"
+          title="클라이언트 식별 시스템 구축기 - 인증 없이, 식별만 하기"
+          category="Key-based identification with ThreadLocal"
+          date="25.04.08"
+          image="https://velog.velcdn.com/images/xha314/post/3540cb9e-cc1e-44f7-b27f-3f9d0d446595/image.png"
+        />
+
+
+      </div>
 
     </div>
 
@@ -599,6 +617,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import SkillTag from "../components/SkillTag.vue"
+import Article from '../components/ArticleComp.vue'
 
 // 섹션 데이터
 const sections = [
@@ -619,6 +638,10 @@ let isScrolling = false // 스크롤이 발생한 상태 추적
 const fullText = '안녕하세요! 김우진입니다'
 const delay = { normal: 100, highlight: 300 }
 const isTyping = ref(false)
+
+const goPage = (url) => {
+  window.open(url)
+}
 
 const typeEffect = () => {
 if(isTyping.value) {
