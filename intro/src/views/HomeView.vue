@@ -3,7 +3,7 @@
   <!-- 네비게이션 바 (section2부터 표시) -->
   <nav
       v-if="currentSection > 1"
-      class="fixed top-0 left-0 w-[20dvw] h-full bg-black text-white z-50 transition-all duration-500 ease-out pt-[5rem]"
+      class="fixed top-0 left-0 w-[20dvw] h-full bg-black text-white z-50 transition-all duration-500 ease-out pt-[5rem] mobile:hidden"
   >
       <div class="opacity-0 text-center mb-[8rem] animate-fade-in" style="cursor: pointer" @click="scrollToSection(1)">
         <span class="block font-bold text-[2.6rem]">
@@ -66,13 +66,13 @@
   >
       <div></div>
       <div>
-      <div class="text-[4.2rem] font-sans space-y-[5dvh]">
-          <span v-for="(char, index) in displayText" :key="index" class="font-bold tracking-[0.3rem]">
+      <div class="text-[4.2rem] font-sans space-y-[5dvh] mobile:text-center">
+          <span v-for="(char, index) in displayText" :key="index" class="font-bold tracking-[0.3rem] mobile:text-[2.9rem]">
           {{ char }}
           </span>
       </div>
       <div
-          class=" font-[100] text-center text-[1.2rem] font-sans leading-relaxed opacity-0 transition-opacity duration-1000 mt-10 leading-[2.22rem] tracking-[0.1rem]"
+          class=" font-[100] text-center text-[1.2rem] mobile:text-[1.5rem]  mobile:text-left mobile:pt-10 font-sans leading-relaxed opacity-0 transition-opacity duration-1000 mt-10 leading-[2.22rem] tracking-[0.1rem]"
           :class="showAdditionalText ? 'opacity-100' : 'opacity-0'"
       >
           <span class="font-bold">변화와 성장을 열망하는 개발자</span>, 김우진입니다! <br />
@@ -87,14 +87,14 @@
   </div>
 
     <!-- section2 -->
-    <div id="section2" class="w-screen min-h-screen bg-[#fff] pl-[20dvw] mt-[4rem]">
+    <div id="section2" class="w-screen min-h-screen bg-[#fff] pl-[20dvw] mobile:pl-0 mt-[4rem]">
       <!-- INTRODUCTION -->
-      <div class="p-[5rem]">
-        <div class="title">
+      <div class="p-[5rem] mobile:p-7">
+        <div class="title mobile:text-[3rem]">
           INTRODUCTION
         </div>
 
-        <div class="mt-7 w-[60dvw] text-[1.1rem] font-[350] text-gray-900 tracking-[0.04rem]">
+        <div class="mt-7 w-[60dvw] mobile:w-full text-[1.1rem] mobile:text-[1.5rem] font-[350] text-gray-900 tracking-[0.04rem]">
 
           백엔드와 프론트엔드 개발 경험이 있으며 졸업 후 풀스택 개발자로 활동하고 싶습니다.
           Spring Boot, Vue, MySQL, AWS, Git, Figma 등을 활용하여 서비스의 기획부터 설계, 개발까지 주도적으로 진행해 본 경험이 있습니다.
@@ -110,9 +110,9 @@
       </div>
 
       <!--SKILLS-->
-      <div class="bg-[#ecfeff] p-[5rem] py-[5rem] mt-[3rem]">
+      <div class="bg-[#ecfeff] p-[5rem] mobile:px-7 py-[5rem] mt-[3rem]">
         <div>
-           <div class="title text-[#354a54]">
+           <div class="title text-[#354a54] mobile:text-[3rem]">
               SKILLS
            </div>
 
@@ -120,7 +120,7 @@
              <div class="font-extrabold mt-10 text-xl text-gray-600">
                Language
              </div>
-             <div class="mt-6 flex" >
+             <div class="mt-6 flex mobile:text-[1.5rem] flex flex-wrap gap-y-5" >
                 <div class="my-1 mr-10 text-gray-800 flex items-center">
                   <img src="../assets/skills/Kotlin-Dark.svg" width="25rem" class="mr-2 " />
                   Kotlin
@@ -146,7 +146,7 @@
              <div class="font-extrabold mt-10 text-xl text-gray-600">
                Framework  &middot;  Library
              </div>
-             <div class="mt-6 flex" >
+             <div class="mt-6 flex mobile:text-[1.5rem] flex flex-wrap gap-y-5" >
                 <div class="my-1 mr-10 text-gray-800 flex items-center">
                   <img src="../assets/skills/Spring-Dark.svg" width="25rem" class="mr-2 " />
                   Spring Boot
@@ -164,7 +164,7 @@
              <div class="font-extrabold mt-10 text-xl text-gray-600">
                Infrastructure  &middot;  Database
              </div>
-             <div class="mt-6 flex" >
+             <div class="mt-6 flex mobile:text-[1.5rem] flex flex-wrap gap-y-5" >
                 <div class="my-1 mr-10 text-gray-800 flex items-center">
                   <img src="../assets/skills/AWS-Dark.svg" width="25rem" class="mr-2 " />
                   AWS
@@ -182,7 +182,7 @@
              <div class="font-extrabold mt-10 text-xl text-gray-600">
                Tools
              </div>
-             <div class="mt-6 flex" >
+             <div class="mt-6 flex mobile:text-[1.5rem]  flex flex-wrap gap-y-5" >
                 <div class="my-1 mr-10 text-gray-800 flex items-center">
                   <img src="../assets/skills/Idea-Dark.svg" width="25rem" class="mr-2 " />
                   IntelliJ
@@ -213,17 +213,17 @@
         </div>
       </div>
 
-      <div class="p-[5rem] bg-gray-900">
+      <div class="p-[5rem] mobile:px-10 bg-gray-900">
         <!--EDUCATION-->
         <div class="border-b-[0.01px] border-gray-600 py-[5rem] ">
-          <div class="title text-white">
+          <div class="title mobile:text-[3rem] text-white">
             EDUCATION
           </div>
 
-          <div class="text-white mt-[2.1rem]">
-            <div class="flex">
-              <div class="font-extrabold text-xl w-[]">경희대학교</div>
-              <div class="font-light ml-12">
+          <div class="text-white mt-[2.1rem] mobile:text-[1.8rem]">
+            <div class="flex mobile:flex-col">
+              <div class="font-extrabold  text-xl  mobile:text-[1.8rem] w-[] ">경희대학교</div>
+              <div class="font-light ml-12 mobile:ml-0 mobile:mt-5">
                 소프트웨어융합학과
                 <div class="font-light mt-1">
                   2022 - 재학중 (2028년 졸업 예정)
@@ -234,14 +234,15 @@
         </div>
         <!--CERTIFICATE-->
         <div class="border-b-[0.01px] border-gray-600 py-[5rem] ">
-          <div class="title text-white">
+          <div class="title text-white mobile:text-[3rem]">
             CERTIFICATE
           </div>
 
-          <div class="text-white mt-[2.1rem]">
-            <div class="flex">
-              <div class="font-extrabold text-xl w-[]">SQLD (SQL Developer)</div>
-              <div class="font-light ml-10">
+          <div class="text-white mt-[2.1rem] mobile:text-[1.8rem]">
+            <div class="flex mobile:flex-col">
+              <div class="font-extrabold text-xl mobile:text-[1.8rem] w-[]">SQLD (SQL Developer)</div>
+                <div class="font-light ml-12 mobile:ml-0 mobile:mt-5">
+
                   한국데이터진흥원
                 <div class="font-light mt-1">
                   2023.8
@@ -253,47 +254,53 @@
 
         <!--EXPERIENCE-->
         <div class="border-b-[0.00px] border-gray-600 py-[5rem] pb-[4rem] ">
-          <div class="title text-white">
+          <div class="title text-white mobile:text-[3rem]">
             EXPERIENCE
           </div>
 
           <div class="text-white mt-[2.1rem]">
-            <div class="flex">
-              <div class="font-extrabold text-xl w-[28dvw]">KVS(KHU Valley Start-up) 성장팀 선정</div>
-              <div class="font-light ml-10">
+            <div class="flex mobile:flex-col mobile:text-[1.8rem] mt-20">
+              <div class="font-extrabold text-xl mobile:text-[1.8rem] w-[28dvw] mobile:w-full">KVS(KHU Valley Start-up) 성장팀 선정</div>
+                <div class="font-light ml-12 mobile:ml-0 mobile:mt-5">
+
                 경희대학교
                 <div class="font-light mt-1">
                   2024.11
                 </div>
               </div>
             </div>
-            <div class="flex mt-5">
-              <div class="font-extrabold text-xl w-[28dvw]">관광데이터 활용 서비스 개발 공모전 우수상</div>
-              <div class="font-light ml-10">
-                한국관광공사 및 카카오, 한국관광공사장상
+            <div class="flex mobile:flex-col mobile:text-[1.8rem] mt-20">
+              <div class="font-extrabold text-xl mobile:text-[1.8rem] w-[28dvw] mobile:w-full">관공데이터 활용 서비스개발 공모전 우수상</div>
+                <div class="font-light ml-12 mobile:ml-0 mobile:mt-5">
+
+                한국관광공사 및 카카오 (한국관광공사장상 수상)
                 <div class="font-light mt-1">
                   2024.10
                 </div>
               </div>
             </div>
-            <div class="flex mt-5">
-              <div class="font-extrabold text-xl w-[28dvw]">청소년 디지털 문제해결 프로젝트 대학생 멘토</div>
-              <div class="font-light ml-10">
+            <div class="flex mobile:flex-col mobile:text-[1.8rem] mt-20">
+              <div class="font-extrabold text-xl mobile:text-[1.8rem] w-[28dvw] mobile:w-full">청소년 디지털 문제해결 프로젝트 대학생 멘토</div>
+                <div class="font-light ml-12 mobile:ml-0 mobile:mt-5">
+
                 한국과학창의재단
                 <div class="font-light mt-1">
                   2024.8 - 2024.11
                 </div>
               </div>
             </div>
-            <div class="flex mt-5">
-              <div class="font-extrabold text-xl w-[28dvw]">강원열린군대 스타트업 경진대회 대상</div>
-              <div class="font-light ml-10">
-                강원대학교 및 육군 2군단
+  
+            <div class="flex mobile:flex-col mobile:text-[1.8rem] mt-20">
+              <div class="font-extrabold text-xl mobile:text-[1.8rem] w-[28dvw] mobile:w-full">강원열린군대 스타트업 경진대회 대상</div>
+                <div class="font-light ml-12 mobile:ml-0 mobile:mt-5">
+
+                  강원대학교 및 육군2군단 (2군단장상)
                 <div class="font-light mt-1">
                   2023.10
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
@@ -303,9 +310,9 @@
     </div>
     
     <!-- section3 -->
-    <div id="section3" class="w-screen min-h-screen bg-[#ececec] pl-[20dvw]">
+    <div id="section3" class="w-screen min-h-screen bg-[#ececec] mobile:pl-0 pl-[20dvw]">
       <!--PROJECTS-->
-      <div class="p-[5rem]">
+      <div class="p-[5rem] mobile:px-10">
         <div class="title">
           PROJECT        
         </div>
