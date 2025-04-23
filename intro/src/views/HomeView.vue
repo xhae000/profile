@@ -221,7 +221,7 @@
           </div>
 
           <div class="text-white mt-[2.1rem] mobile:text-[1.8rem]">
-            <div class="flex mobile:flex-col">
+            <div class="flex mobile:flex-col ">
               <div class="font-extrabold  text-xl  mobile:text-[1.8rem] w-[] ">경희대학교</div>
               <div class="font-light ml-12 mobile:ml-0 mobile:mt-5">
                 소프트웨어융합학과
@@ -294,7 +294,7 @@
               <div class="font-extrabold text-xl mobile:text-[1.8rem] w-[28dvw] mobile:w-full">강원열린군대 스타트업 경진대회 대상</div>
                 <div class="font-light ml-12 mobile:ml-0 mobile:mt-5">
 
-                  강원대학교 및 육군2군단 (2군단장상)
+                  강원대학교 및 육군2군단 (2군단장상 수상)
                 <div class="font-light mt-1">
                   2023.10
                 </div>
@@ -313,35 +313,35 @@
     <div id="section3" class="w-screen min-h-screen bg-[#ececec] mobile:pl-0 pl-[20dvw]">
       <!--PROJECTS-->
       <div class="p-[5rem] mobile:px-10">
-        <div class="title">
+        <div class="title mobile:text-[3rem]">
           PROJECT        
         </div>
         <!-- KHU BUS -->
         <div class="mt-4">
-          <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
+          <div class="flex  justify-left w-full p-5 pr-1 mobile:p-5  bg-white h-[19rem] mobile:h-auto mobile:flex-col shadow-lg shadow-gray-500/15">
             <div class="h-full flex items-center">
                 <img class="h-full rounded-2xl" src="../assets/mockup/khubus.png" />
             </div>
-            <div class="px-7 flex flex-col justify-between">
+            <div class="px-7 mobile:mt-6 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center ">
-                        <div class="text-[2rem] text-gray-800 font-bold">
+                        <div class="text-[2rem] mobile:text-[3rem] text-gray-800 font-bold">
                             KHU BUS
                         </div>
-                        <div class="text-gray-500 font-light ml-6">
+                        <div class="text-gray-500 font-light mobile:text-[1.5rem] ml-6">
                             24.2 - 개발 진행 중
                         </div>
                     </div>
-                    <div class="mt-2 text-gray-700 text-[0.9rem]">
+                    <div class="mt-2 text-gray-700 mobile:text-[1.45rem] text-[0.9rem]">
                         경희대학교 학생들을 위한 캠퍼스 버스 정보제공 앱 서비스
                     </div>
                 </div>
 
                 <div class="">
-                    <div class="text-[1.15rem] text-blue-600 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-blue-600 font-[300]">
                         &bull; 버스 시점 정보 제공 알고리즘 개발 중
                     </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 기획, 백엔드, 프론트엔드, 디자인 담당
                     </div>
                 </div>
@@ -357,40 +357,40 @@
 
         <!--LOOPIN-->
         <div class="mt-4">
-          <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
+          <div class="flex justify-left w-full p-5 pr-1 mobile:p-5 bg-white h-[19rem] mobile:h-auto mobile:flex-col shadow-lg shadow-gray-500/15">
             <div class="h-full flex items-center">
                 <img class="h-full rounded-2xl" src="../assets/mockup/loop-in.png" />
             </div>
-            <div class="px-7 flex flex-col justify-between">
+            <div class="px-7 mobile:mt-6 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center ">
-                        <div class="text-[2rem] text-gray-800 font-bold">
+                        <div class="text-[2rem] mobile:text-[3rem] text-gray-800 font-bold">
                             Loopin
                         </div>
-                        <div class="text-gray-500 font-light ml-6">
+                        <div class="text-gray-500 font-light mobile:text-[1.5rem] ml-6">
                             24.3 - 24.4
                         </div>
                     </div>
-                    <div class="mt-2 text-gray-700 text-[0.9rem]">
+                    <div class="mt-2 text-gray-700 mobile:text-[1.45rem] text-[0.9rem]">
                         AI 기반의 대학생 실명기반 모임 플랫폼
                     </div>
                     
                 </div>
                 
                 <div class="">
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 프롬프트 튜닝을 활용한 AI 자유 입력 기반 맞춤형 추천 제공
                     </div>
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; OCR 기술을 활용한 학생증 이미지 텍스트 자동 인식 및 처리
                     </div>
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 오토 스케일링 및 로드 밸런싱을 통한 트래픽 대응 및 서버 안정성 향상
                     </div>
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; JWT 기반 인증으로 사용자 식별 및 보안 강화
                     </div>
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 백엔드, 프론트엔드 개발 담당
                     </div>
                 </div>
@@ -411,36 +411,36 @@
         
         <!--Fair Pair-->
         <div class="mt-4">
-          <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
+          <div class="flex justify-left w-full p-5 pr-1 mobile:p-5  bg-white h-[19rem] mobile:h-auto mobile:flex-col shadow-lg shadow-gray-500/15">
             <div class="h-full flex items-center">
                 <img class="h-full rounded-2xl" src="../assets/mockup/fair-pair.png" />
             </div>
-            <div class="px-7 flex flex-col justify-between">
+            <div class="px-7 mobile:mt-6 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center ">
-                        <div class="text-[2rem] text-gray-800 font-bold">
+                        <div class="text-[2rem] mobile:text-[3rem] text-gray-800 font-bold">
                             Fair Pair
                         </div>
-                        <div class="text-gray-500 font-light ml-6">
+                        <div class="text-gray-500 font-light mobile:text-[1.5rem] ml-6">
                             24.10 - 24.12
                         </div>
                     </div>
-                    <div class="mt-2 text-gray-700 text-[0.9rem]">
+                    <div class="mt-2 text-gray-700 mobile:text-[1.45rem] text-[0.9rem]">
                         '뚜벅이' 대학생들을 위한, 대중교통 기준의 공평한 약속 장소를 구해내는 프로그램
                     </div>
                 </div>
 
                 <div class="">
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; Google Maps/Matrix API를 활용한 대중교통 기반 소요 시간 계산
                     </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 유저별 목적지 기준 가중치 설정 및 소요 시간 차 최소화 알고리즘 적용
                     </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; Chart.js 기반 소요 시간 차이 감소 시각화
                     </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 기획, 백엔드, 프론트엔드, 디자인 담당
                     </div>
                 </div>
@@ -457,36 +457,36 @@
         
         <!--Camping Tutor-->
         <div class="mt-4">
-          <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
+          <div class="flex justify-left w-full p-5 pr-1 mobile:p-5  bg-white h-[19rem] mobile:h-auto mobile:flex-col shadow-lg shadow-gray-500/15">
             <div class="h-full flex items-center">
                 <img class="h-full rounded-2xl" src="../assets/mockup/camping-tutor.png" />
             </div>
-            <div class="px-7 flex flex-col justify-between">
+            <div class="px-7 mobile:mt-6 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center ">
-                        <div class="text-[2rem] text-gray-800 font-bold">
+                        <div class="text-[2rem] mobile:text-[3rem] text-gray-800 font-bold">
                             캠핑 튜터
                         </div>
-                        <div class="text-gray-500 font-light ml-6">
+                        <div class="text-gray-500 font-light mobile:text-[1.5rem] ml-6">
                             24.7 - 24.10
                         </div>
                     </div>
-                    <div class="mt-2 text-gray-700 text-[0.9rem]">
+                    <div class="mt-2 text-gray-700 mobile:text-[1.45rem] text-[0.9rem]">
                         초보 캠퍼들을 위한 캠핑 튜토리얼 및 가이드 서비스
                     </div>
                 </div>
 
                 <div class="">
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 한국관광공사 Open API 기반 캠핑장 정보 수집, 가공 및 DB 적재
                     </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; JWT 기반 인증 구조를 활용한 무상태(state-less) 애플리케이션 구현
                     </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; SPA(Single Page Application) 방식으로 모바일 UX 최적화
                     </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 기획, 백엔드, 프론트엔드, 디자인, 배포 담당
                     </div>
                 </div>
@@ -506,33 +506,33 @@
          
         <!--company-->
         <div class="mt-4">
-          <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
+          <div class="flex justify-left w-full p-5 pr-1 mobile:p-5  bg-white h-[19rem] mobile:h-auto mobile:flex-col shadow-lg shadow-gray-500/15">
             <div class="h-full flex items-center">
                 <img class="h-full rounded-2xl" src="../assets/mockup/company.png" />
             </div>
-            <div class="px-7 flex flex-col justify-between">
+            <div class="px-7 mobile:mt-6 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center ">
-                        <div class="text-[2rem] text-gray-800 font-bold">
+                        <div class="text-[2rem] mobile:text-[3rem] text-gray-800 font-bold">
                             기업 소개 페이지 (외주)
                         </div>
-                        <div class="text-gray-500 font-light ml-6">
+                        <div class="text-gray-500 font-light mobile:text-[1.5rem] ml-6">
                             24.8
                         </div>
                     </div>
-                    <div class="mt-2 text-gray-700 text-[0.9rem]">
+                    <div class="mt-2 text-gray-700 mobile:text-[1.45rem] text-[0.9rem]">
                         기업 서비스 상세소개 페이지
                     </div>
                 </div>
 
                 <div class="">
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; Mobile, Table, PC 호환 반응형 웹
                     </div> 
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; Vanilla JS를 활용한 스크롤 이벤트, 엘리먼트 동적 변화 구현
                     </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 프론트엔드 개발 담당
                     </div>
                 </div>
@@ -549,33 +549,33 @@
 
         <!--Salt Room-->
         <div class="mt-4">
-          <div class="flex justify-left w-full p-5 pr-1  bg-white h-[19rem] shadow-lg shadow-gray-500/15">
+          <div class="flex justify-left w-full p-5 pr-1 mobile:p-5  bg-white h-[19rem] mobile:h-auto mobile:flex-col shadow-lg shadow-gray-500/15">
             <div class="h-full flex items-center">
                 <img class="h-full rounded-2xl" src="../assets/mockup/salt-room.png" />
             </div>
-            <div class="px-7 flex flex-col justify-between">
+            <div class="px-7 mobile:mt-6 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center ">
-                        <div class="text-[2rem] text-gray-800 font-bold">
+                        <div class="text-[2rem] mobile:text-[3rem] text-gray-800 font-bold">
                             쇼핑몰 (외주)
                         </div>
-                        <div class="text-gray-500 font-light ml-6">
+                        <div class="text-gray-500 font-light mobile:text-[1.5rem] ml-6">
                             24.9 - 24.10
                         </div>
                     </div>
-                    <div class="mt-2 text-gray-700 text-[0.9rem]">
+                    <div class="mt-2 text-gray-700 mobile:text-[1.45rem] text-[0.9rem]">
                         Key Ring 소개 및 판매 쇼핑몰
                     </div>
                 </div>
 
                 <div class="">
-                    <div class="text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; Vanilla JS 기반 도트 이미지 애니메이션 로직 구현
                     </div> 
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 섹션 단위 스크롤 트리거 애니메이션으로 페이지 전환 효과 강화
                     </div>
-                    <div class="mt-1 text-[1.15rem] text-gray-900 font-[300]">
+                    <div class="text-[1.15rem] mobile:text-[2rem] mobile:my-7 text-gray-900 font-[300]">
                         &bull; 프론트엔드 개발 담당
                     </div>
                 </div>
@@ -595,13 +595,13 @@
 
     
     <!-- section4 -->
-    <div id="section4" class="w-screen min-h-screen bg-[#fff] pl-[20dvw]">
+    <div id="section4" class="w-screen min-h-screen bg-[#fff] mobile:pl-0 pl-[20dvw]">
 
-      <div class="title pl-[5rem] pt-[5rem] text-[#000]">
+      <div class="title mobile:pl-10  mobile:pt-10 pl-[5rem] pt-[5rem] text-[#000] mobile:text-[3rem]">
               Blog
       </div>
 
-      <div class="flex gap-[2%] p-[5rem] pt-[2rem] flex-wrap">
+      <div class="flex gap-[2%] p-[5rem] mobile:p-10 pt-[2rem] flex-wrap">
         <Article 
           @click="goPage(`
           https://velog.io/@xha314/%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%8B%9D%EB%B3%84-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95%EA%B8%B0-%EC%9D%B8%EC%A6%9D-%EC%97%86%EC%9D%B4-%EC%8B%9D%EB%B3%84%EB%A7%8C-%ED%95%98%EA%B8%B0
@@ -745,15 +745,15 @@ section?.scrollIntoView({ behavior: 'smooth' })
 currentSection.value = id
 }
 
-onMounted(() => {
-window.addEventListener('scroll', onScroll)
+// onMounted(() => {
+// window.addEventListener('scroll', onScroll)
 
-// section2에서 위로 스크롤 시, section1으로 부드럽게 이동
-const section2 = document.getElementById('section2')
-if (section2) {
-section2.addEventListener('wheel', handleSection2Scroll)
-}
-})
+//   // section2에서 위로 스크롤 시, section1으로 부드럽게 이동
+//   const section2 = document.getElementById('section2')
+//   if (section2) {
+//     section2.addEventListener('wheel', handleSection2Scroll)
+//   }
+// })
 
 const goGithub = () => {
 window.open('https://github.com/xhae000', '_blank');
