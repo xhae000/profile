@@ -1,29 +1,11 @@
-# intro
+# Welcome
 
-This template should help get you started developing with Vue 3 in Vite.
+Thank you for visiting this repository.
 
-## Recommended IDE Setup
+This repository hosts the source code and deployment files for my GitHub Pages site, which you can access at:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+➡ **[https://xhae000.github.io/profile/](https://xhae000.github.io/profile/)**
 
-## Customize configuration
+The site is intended as a personal profile and portfolio page, showcasing my projects, experiences, and skills.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Thank you for your interest.
