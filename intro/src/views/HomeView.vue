@@ -424,6 +424,8 @@ const projects = [
 
 const articles = [
   { title: '클라이언트 식별 시스템 구축기 - 인증 없이, 식별만 하기', category: 'Key-based identification with ThreadLocal', date: '25.04.08', image: 'https://velog.velcdn.com/images/xha314/post/3540cb9e-cc1e-44f7-b27f-3f9d0d446595/image.png', url: 'https://velog.io/@xha314/%ED%81%B4%EB%9D%BC%EC%9D%BC' }
+,
+  {title : "RestControllerAdvice가 Swagger를 깨트린 이유", category: 'Spring and Swagger compatible troubleshooting', date:'25.05.06', image : 'https://velog.velcdn.com/images/xha314/post/95136f77-1ddb-474c-8241-e70d8a7d95d1/image.png', url: 'https://velog.io/@xha314/RestControllerAdvice%EA%B0%80-Swagger%EB%A5%BC-%EA%B9%A8%ED%8A%B8%EB%A6%B0-%EC%9D%B4%EC%9C%A0'}
 ]
 
 function scrollToSection(id) {
