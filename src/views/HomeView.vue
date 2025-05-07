@@ -69,7 +69,7 @@
         class="mt-10 leading-relaxed tracking-[0.1rem] text-[1.2rem] mobile:text-[1.5rem] opacity-0 transition-opacity duration-1000"
         :class="showAdditional ? 'opacity-100' : ''"
       >
-        <span class="font-[600]">변화와 성장을 즐기며, 아이디어를 실현시키는 개발자</span> 김우진입니다.
+        <span class="font-[600]">아이디어를 실현시키는는 개발자</span>, 김우진입니다.
         
       </div>
     </div>
@@ -279,10 +279,10 @@ function handleSection2Scroll(e) {
 typeEffect()
 
 // Section2 data
-const introText = `아이디어를 발전시키고, 실제 서비스로 구현하는 개발자 김우진입니다.
+const introText = `아이디어를 실제 서비스로 구현하는 것을 좋아하는는 개발자 김우진입니다.
 Spring Boot, MySQL, Redis, Docker, AWS, GitHub Actions 등 다양한 기술 스택을 활용해 기획부터 설계, 개발, 배포까지 전 과정을 주도적으로 진행해본 경험이 있습니다. 단순히 동작하는 코드를 넘어서, 확장성과 유지보수성, 운영 효율성까지 고려한 개발을 중요하게 생각합니다.
 
-프로젝트를 진행하며 도메인 기반 설계, RESTful API 설계, 트랜잭션 처리, 캐시 적용, CI/CD 자동화 등 실제 서비스 수준의 품질을 구현하기 위해 노력해 왔습니다. Vue와 Figma를 활용한 프론트엔드 개발 및 UI 기획 경험도 보유하고 있으며, 사용자 경험을 가장 중요하게 여깁니다.
+프로젝트를 진행하며 도메인 기반 설계, 트랜잭션 처리, 캐시 적용, CI/CD 자동화 등 실제 서비스 수준의 품질을 구현하기 위해 노력해 왔습니다. Vue와 Figma를 활용한 프론트엔드 개발 및 UI 기획 경험도 보유하고 있으며, 사용자 경험을 가장 중요하게 여깁니다.
 
 소프트웨어를 통해 사회적 문제를 해결하는 일에 관심이 많으며, 이를 위해 원활한 협업과 커뮤니케이션이 가장 중요하다고 생각합니다. 프로젝트를 혼자서는 완성할 수 없다는 사실을 이해하고 있으며, 팀 내에서 문제를 함께 정의하고 해결하는 데 능동적으로 참여해 왔습니다.
 
@@ -397,12 +397,12 @@ const projects = [
   },
   {
     id: 5,
-    title: '기업 소개 페이지 (외주)',
+    title: '기업 소개 페이지 (외주 개발)',
     period: '24.8',
     description: '기업 서비스 상세소개 페이지',
     features: [
       '반응형 웹 (Mobile, Tablet, PC)',
-      'Vanilla JS를 활용한 스크롤 이벤트 및 동적 엘리먼트 변화 구현',
+      'Vanilla JS를 활용한 이벤트 구현', 
       '프론트엔드 개발 담당'
     ],
     skills: ['HTML', 'CSS', 'vanilla JS', 'Netlify'],
@@ -410,21 +410,6 @@ const projects = [
     boxColor: '#FF9671',
     textColor: '#FFFFFF'
   },
-  {
-    id: 6,
-    title: '쇼핑몰 (외주)',
-    period: '24.9 - 24.10',
-    description: 'Key Ring 소개 및 판매 쇼핑몰',
-    features: [
-      'Vanilla JS 기반 도트 이미지 애니메이션 로직 구현',
-      '섹션 단위 스크롤 트리거 애니메이션 구현',
-      '프론트엔드 개발 담당'
-    ],
-    skills: ['Vue JS', 'JS', 'Vercel'],
-    img: saltRoomImg,
-    boxColor: '#845EC2',
-    textColor: '#FFFFFF'
-  }
 ]
 
 const articles = [
