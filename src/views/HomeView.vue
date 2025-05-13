@@ -66,10 +66,10 @@
       </div>
       <!-- Additional Text -->
       <div
-        class="mt-10 leading-relaxed tracking-[0.1rem] text-[1.2rem] mobile:text-[1.5rem] opacity-0 transition-opacity duration-1000"
+        class="mt-5 leading-relaxed tracking-[0.1rem] text-[1.5rem] mobile:text-[1.7rem] opacity-0 transition-opacity duration-1000"
         :class="showAdditional ? 'opacity-100' : ''"
       >
-        <span class="font-[600]">아이디어를 실현시키는는 개발자</span>, 김우진입니다.
+        <span class="font-[600]">Server Developer</span>
         
       </div>
     </div>
@@ -279,7 +279,7 @@ function handleSection2Scroll(e) {
 typeEffect()
 
 // Section2 data
-const introText = `아이디어를 실제 서비스로 구현하는 것을 좋아하는는 개발자 김우진입니다.
+const introText = `아이디어를 실제 서비스로 구현하는 것을 좋아하는 개발자 김우진입니다.
 Spring Boot, MySQL, Redis, Docker, AWS, GitHub Actions 등 다양한 기술 스택을 활용해 기획부터 설계, 개발, 배포까지 전 과정을 주도적으로 진행해본 경험이 있습니다. 단순히 동작하는 코드를 넘어서, 확장성과 유지보수성, 운영 효율성까지 고려한 개발을 중요하게 생각합니다.
 
 프로젝트를 진행하며 도메인 기반 설계, 트랜잭션 처리, 캐시 적용, CI/CD 자동화 등 실제 서비스 수준의 품질을 구현하기 위해 노력해 왔습니다. Vue와 Figma를 활용한 프론트엔드 개발 및 UI 기획 경험도 보유하고 있으며, 사용자 경험을 가장 중요하게 여깁니다.
@@ -416,6 +416,8 @@ const articles = [
   { title: '클라이언트 식별 시스템 구축기 - 인증 없이, 식별만 하기', category: 'Key-based identification with ThreadLocal', date: '25.04.08', image: 'https://velog.velcdn.com/images/xha314/post/3540cb9e-cc1e-44f7-b27f-3f9d0d446595/image.png', url: 'https://velog.io/@xha314/%ED%81%B4%EB%9D%BC%EC%9D%BC' }
 ,
   {title : "RestControllerAdvice가 Swagger를 깨트린 이유", category: 'Spring and Swagger compatible troubleshooting', date:'25.05.06', image : 'https://velog.velcdn.com/images/xha314/post/95136f77-1ddb-474c-8241-e70d8a7d95d1/image.png', url: 'https://velog.io/@xha314/RestControllerAdvice%EA%B0%80-Swagger%EB%A5%BC-%EA%B9%A8%ED%8A%B8%EB%A6%B0-%EC%9D%B4%EC%9C%A0'}
+  ,
+  {title : "환경별로 나눈 secret 관리 전략 : Docker, 로컬, 배포까지", category: 'Multi-environment secret management', date:'25.05.07', image : 'https://velog.velcdn.com/images/xha314/post/ee421452-3a90-4193-a077-f8a4dfbffbc9/image.png', url: 'https://velog.io/@xha314/%ED%99%98%EA%B2%BD%EB%B3%84%EB%A1%9C-%EB%82%98%EB%88%88-secret-%EA%B4%80%EB%A6%AC-%EC%A0%84%EB%9E%B5-Docker-%EB%A1%9C%EC%BB%AC-%EB%B0%B0%ED%8F%AC%EA%B9%8C%EC%A7%80'}
 ]
 
 function scrollToSection(id) {
