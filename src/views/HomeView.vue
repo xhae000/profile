@@ -10,7 +10,7 @@
       @click="scrollToSection(1)"
     >
       <span class="block font-bold text-[2.6rem]">WooJin</span>
-      <span class="block font-[200] text-[1.2rem]">developer</span>
+      <span class="block font-[200] text-[1.2rem]">Server Developer</span>
     </div>
     <!-- Section Buttons -->
     <div class="flex flex-col items-center space-y-8 opacity-0 animate-fade-in text-[1.6rem]">
@@ -153,7 +153,7 @@
           :key="proj.id"
           class="flex bg-white p-5 shadow-lg mobile:flex-col"
         >
-          <img :src="proj.img" class="w-[35%] rounded-2xl mobile:w-full" />
+          <img :src="proj.img" class="w-[22dvw] rounded-2xl mobile:w-full" />
           <div class="px-7 mobile:mt-6 flex flex-col justify-between">
             <div>
               <div class="flex items-center">
@@ -162,14 +162,14 @@
               </div>
               <p class="mt-2 text-gray-700 mobile:text-[1.45rem] text-[0.9rem]">{{ proj.description }}</p>
             </div>
-            <div class="mt-4 space-y-2 mobile:my-7">
+            <div class="mt-4 space-y-4 mobile:my-7">
               <div
                 v-for="feat in proj.features"
                 :key="feat"
                 class="text-[1.15rem] mobile:text-[2rem] font-[300] text-gray-900"
               >• {{ feat }}</div>
             </div>
-            <div class="mt-4 flex flex-wrap gap-2">
+            <div class="mt-4 flex flex-wrap gap-1 justify-center">
               <SkillTag v-for="(sk, i) in proj.skills" :key="i" :name="sk" :boxColor="proj.boxColor" :textColor="proj.textColor" />
             </div>
           </div>
@@ -223,6 +223,7 @@ import figmaIcon from '../assets/skills/Figma-Dark.svg'
 import postmanIcon from '../assets/skills/Postman.svg'
 import vercelSkillIcon from '../assets/skills/Vercel-Dark.svg'
 
+import raspyImg from "../assets/mockup/raspy.png"
 import khubusImg from '../assets/mockup/khubus.png'
 import loopInImg from '../assets/mockup/loop-in.png'
 import fairPairImg from '../assets/mockup/fair-pair.png'
@@ -326,8 +327,10 @@ const educationList = [
     ]
   },
   { title: 'EXPERIENCE', items: [
+
+      { name: 'Raspy', detail: 'Tech Lead / Full Stack Developer<br/>2025 - Present' },
       { name: 'KVS(KHU Valley Start-up) 성장팀 선정', detail: '경희대학교<br/>2024.11' },
-      { name: '관공데이터 활용 서비스개발 공모전 우수상', detail: '한국관광공사 및 카카오<br/>2024.10' },
+      { name: '관광데이터 활용 서비스개발 공모전 우수상', detail: '한국관광공사 및 카카오<br/>2024.10' },
       { name: '청소년 디지털 문제해결 프로젝트 대학생 멘토', detail: '한국과학창의재단<br/>2024.8 - 2024.11' },
       { name: '강원열린군대 스타트업 경진대회 대상', detail: '강원대학교 및 육군2군단<br/>2023.10' }
     ]
@@ -337,79 +340,88 @@ const educationList = [
 const projects = [
   {
     id: 1,
-    title: 'KHU BUS',
-    period: '24.2 - 개발 진행 중',
-    description: '경희대학교 학생들을 위한 캠퍼스 버스 정보제공 앱 서비스',
-    features: ['버스 시점 정보 제공 알고리즘 개발 중', '기획, 백엔드, 프론트엔드, 디자인 담당'],
-    skills: ['Spring Boot', 'Kotlin', 'Vue JS'],
-    img: khubusImg,
+    title: 'Raspy',
+    period: '25.4 - 개발 진행 중',
+    description: '경기 기록, 실시간 경기를 위한 스포츠 플랫폼 앱 서비스',
+    features: [
+    'RESTful API 설계 및 OpenAPI 기반 명세 관리',  
+    'Redocly 기반 API Docs 구축 및 OpenAPI 명세 자동화 파이프라인 설계',
+    'Nginx 기반 Rate Limiting 및 컨테이너 트래픽 리버스 프록시 아키텍처',
+    "LLM 기반 도메인 특화 텍스트 생성 및 카테고리 태깅 파이프라인",
+    "AWS S3-CloudFront 연동 미디어 저장소 및 정적 리소스 글로벌 캐싱",
+    "GitHub Actions 기반 멀티스테이지 배포 파이프라인 및 환경별 자동화된 아티팩트 관리",
+        'WebSocket 기반 실시간 이벤트 브로드캐스팅 및 비동기 데이터 동기화',
+    "JPA 기반 도메인 설계 및 트랜잭션 일관성 보장", 
+     '백엔드, 프론트엔드, 디자인, 클라우드 담당'],
+    skills: ['Spring Boot','DOCKER', 'NGINX', 'MYSQL', 'JPA', 'AWS', 'Github Actions', 'WebSocket'],
+    img: raspyImg,
     boxColor: '#FF6B6B',
     textColor: '#FFFFFF'
   },
-  {
-    id: 2,
-    title: 'Loopin',
-    period: '24.3 - 24.4',
-    description: 'AI 기반의 대학생 실명기반 모임 플랫폼',
-    features: [
-      '프롬프트 튜닝을 활용한 AI 자유 입력 기반 맞춤형 추천 제공',
-      'OCR 기술을 활용한 학생증 이미지 텍스트 자동 인식 및 처리',
-      '오토 스케일링 및 로드 밸런싱을 통한 트래픽 대응 및 서버 안정성 향상',
-      'JWT 기반 인증으로 사용자 식별 및 보안 강화',
-      '백엔드, 프론트엔드 개발 담당'
-    ],
-    skills: ['Spring Boot', 'Kotlin', 'Vue JS', 'Python', 'FastAPI', 'AWS'],
-    img: loopInImg,
-    boxColor: '#6BCB77',
-    textColor: '#FFFFFF'
-  },
-  {
-    id: 3,
-    title: 'Fair Pair',
-    period: '24.10 - 24.12',
-    description: '뚜벅이 대학생들을 위한 공평한 약속 장소 추천 프로그램',
-    features: [
-      'Google Maps/Matrix API를 활용한 대중교통 기반 소요 시간 계산',
-      '유저별 목적지 기준 가중치 설정 및 소요 시간 차 최소화 알고리즘 적용',
-      'Chart.js 기반 소요 시간 차이 감소 시각화',
-      '기획, 백엔드, 프론트엔드, 디자인 담당'
-    ],
-    skills: ['Kotlin', 'Vue JS', 'Google Directions and Distance Matrix API', 'Chart.js'],
-    img: fairPairImg,
-    boxColor: '#4D96FF',
-    textColor: '#FFFFFF'
-  },
-  {
-    id: 4,
-    title: '캠핑 튜터',
-    period: '24.7 - 24.10',
-    description: '초보 캠퍼들을 위한 캠핑 튜토리얼 및 가이드 서비스',
-    features: [
-      '한국관광공사 Open API 기반 캠핑장 정보 수집, 가공 및 DB 적재',
-      'JWT 기반 인증 구조를 활용한 무상태 애플리케이션 구현',
-      'SPA 방식으로 모바일 UX 최적화',
-      '기획, 백엔드, 프론트엔드, 디자인, 배포 담당'
-    ],
-    skills: ['Spring Boot', 'Kotlin', 'Vue JS', 'H2DB', 'JWT', 'JPA', 'AWS'],
-    img: campingTutorImg,
-    boxColor: '#FFC75F',
-    textColor: '#000000'
-  },
-  {
-    id: 5,
-    title: '기업 소개 페이지 (외주 개발)',
-    period: '24.8',
-    description: '기업 서비스 상세소개 페이지',
-    features: [
-      '반응형 웹 (Mobile, Tablet, PC)',
-      'Vanilla JS를 활용한 이벤트 구현', 
-      '프론트엔드 개발 담당'
-    ],
-    skills: ['HTML', 'CSS', 'vanilla JS', 'Netlify'],
-    img: companyImg,
-    boxColor: '#FF9671',
-    textColor: '#FFFFFF'
-  },
+  // {
+  //   id: 2,
+  //   title: 'Loopin',
+  //   period: '24.3 - 24.4',
+  //   description: 'AI 기반의 대학생 실명기반 모임 플랫폼',
+  //   features: [
+  //     '프롬프트 튜닝을 활용한 AI 자유 입력 기반 맞춤형 추천 제공',
+  //     'OCR 기술을 활용한 학생증 이미지 텍스트 자동 인식 및 처리',
+  //     '오토 스케일링 및 로드 밸런싱을 통한 트래픽 대응 및 서버 안정성 향상',
+  //     'JWT 기반 인증으로 사용자 식별 및 보안 강화',
+  //     '백엔드, 프론트엔드 개발 담당'
+  //   ],
+  //   skills: ['Spring Boot', 'Kotlin', 'Vue JS', 'Python', 'FastAPI', 'AWS'],
+  //   img: loopInImg,
+  //   boxColor: '#6BCB77',
+  //   textColor: '#FFFFFF'
+  // },
+  // {
+  //   id: 3,
+  //   title: 'Fair Pair',
+  //   period: '24.10 - 24.12',
+  //   description: '뚜벅이 대학생들을 위한 공평한 약속 장소 추천 프로그램',
+  //   features: [
+  //     'Google Maps/Matrix API를 활용한 대중교통 기반 소요 시간 계산',
+  //     '유저별 목적지 기준 가중치 설정 및 소요 시간 차 최소화 알고리즘 적용',
+  //     'Chart.js 기반 소요 시간 차이 감소 시각화',
+  //     '기획, 백엔드, 프론트엔드, 디자인 담당'
+  //   ],
+  //   skills: ['Kotlin', 'Vue JS', 'Google Directions and Distance Matrix API', 'Chart.js'],
+  //   img: fairPairImg,
+  //   boxColor: '#4D96FF',
+  //   textColor: '#FFFFFF'
+  // },
+  // {
+  //   id: 4,
+  //   title: '캠핑 튜터',
+  //   period: '24.7 - 24.10',
+  //   description: '초보 캠퍼들을 위한 캠핑 튜토리얼 및 가이드 서비스',
+  //   features: [
+  //     '한국관광공사 Open API 기반 캠핑장 정보 수집, 가공 및 DB 적재',
+  //     'JWT 기반 인증 구조를 활용한 무상태 애플리케이션 구현',
+  //     'SPA 방식으로 모바일 UX 최적화',
+  //     '기획, 백엔드, 프론트엔드, 디자인, 배포 담당'
+  //   ],
+  //   skills: ['Spring Boot', 'Kotlin', 'Vue JS', 'H2DB', 'JWT', 'JPA', 'AWS'],
+  //   img: campingTutorImg,
+  //   boxColor: '#FFC75F',
+  //   textColor: '#000000'
+  // },
+  // {
+  //   id: 5,
+  //   title: '기업 소개 페이지 (외주 개발)',
+  //   period: '24.8',
+  //   description: '기업 서비스 상세소개 페이지',
+  //   features: [
+  //     '반응형 웹 (Mobile, Tablet, PC)',
+  //     'Vanilla JS를 활용한 이벤트 구현', 
+  //     '프론트엔드 개발 담당'
+  //   ],
+  //   skills: ['HTML', 'CSS', 'vanilla JS', 'Netlify'],
+  //   img: companyImg,
+  //   boxColor: '#FF9671',
+  //   textColor: '#FFFFFF'
+  // },
 ]
 
 const articles = [
